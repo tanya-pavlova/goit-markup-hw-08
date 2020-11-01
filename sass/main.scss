@@ -1,0 +1,24 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+
+@import "./base/common";
+@import "./base/container";
+
+
+@import "./components/social-links";
+@import "./components/title";
+
+@import "./components/join-links";
+
+@import "./components/modal-btn";
+@import "./components/modal";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/footer-form";

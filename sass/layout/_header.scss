@@ -1,0 +1,158 @@
+.header {
+    padding: 24px 0; 
+    
+    .logo {
+        font-family: $secondary-font;  
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.192;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .address {
+        display: flex;
+        align-items: center;
+        margin-left: auto;  
+        }
+
+  }
+
+.logo-accent {
+    font-family: $secondary-font;  
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+   } 
+
+.navigation {
+    display: flex;
+    align-items: center;
+  }
+
+
+.navigation-list {    
+    display: flex;
+    align-items: center;
+
+    &-link {                   
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+        color: $title-main-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;  
+
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+   
+  }
+
+
+.email-icon{
+    display: inline-block;    
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;    
+    fill: $secondary-color;
+
+
+    .header-email-link:hover &,
+    .header-email-link:focus & {
+        fill: $accent-color; 
+    }
+}
+
+.tel-icon {
+    display: inline-block;       
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $secondary-color;
+
+    .header-tel-link:hover &,
+    .header-tel-link:focus & {
+        fill: $accent-color; 
+    }
+}
+
+
+.header-email-link {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 50px;
+    font-family: $main-font;    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $secondary-color;  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color; 
+    }
+}
+
+.header-tel-link {
+    display: inline-flex;
+    align-items: center;
+   
+    font-family: $main-font;    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $secondary-color;  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: $accent-color; 
+    }
+}
+
+
+.logo-link {
+      margin-right: 93px;
+  }
+
+.current {
+    color: $accent-color;
+    
+
+    &::after  {
+        display: block;    
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;   
+        border-radius: 2px;
+        align-items: flex-end;
+        bottom: -30px;  
+        background-color: $accent-color;
+    }
+}
+

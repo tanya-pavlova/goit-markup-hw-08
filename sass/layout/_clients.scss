@@ -1,0 +1,48 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 90px;
+        border-radius: 4px;
+        border: 1px solid #AFB1B8;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+        &-link:hover {
+            .clients-list & {
+                border: 1px solid #2196F3;
+            }
+        }
+
+        &-link:focus {
+            .clients-list & {
+                border: 1px solid #2196F3;
+            }
+        }
+
+    &-svg {
+        width: 42px;
+        height: 49px;
+        fill: #AFB1B8;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        .clients-list-link:hover &,
+        .clients-list-link:focus & {
+    fill: #2196F3;    
+    }
+    }
+    
+}
+

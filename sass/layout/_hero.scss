@@ -1,0 +1,42 @@
+
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+
+    .container {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+
+    &-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.364;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: $text-contrast;
+    
+    }
+}
+
+/*- overlay -*/
+
+.overlay {
+    margin-left: auto;
+    margin-right: auto;    
+    background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+          ),
+           url('../images/hero-background/hero-bgnd.jpg');
+    background-color: $background-contrast;
+    background-repeat: no-repeat;
+    background-position: center;      
+}
+
+
+

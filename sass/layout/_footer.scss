@@ -1,0 +1,60 @@
+.ft-background {
+    background-color: $background-contrast;
+}
+
+
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-info:not(:last-child) {
+        margin-bottom: 9px;
+     }
+
+    &-address-text {
+        font-family: $main-font;    
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714; 
+        letter-spacing: 0.03em;    
+        margin-top: 20px;
+        margin-bottom: 9px; 
+        color: #FFFFFF;
+    }
+
+
+    &-email-link, 
+    &-tel-link {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .container {
+        display: flex; 
+    }
+
+    .logo {
+        font-family: $secondary-font;  
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.192;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+}
+
+
+     
+
+.address-container {
+display: flex;
+justify-content: flex-start;
+flex-direction:column ;
+}
+
+
