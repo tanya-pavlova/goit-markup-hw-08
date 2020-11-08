@@ -218,11 +218,18 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .backdrop {
+    min-width: 768px;
     padding: 207px 159px;
   }
 }
 
 @media screen and (max-width: 1199px) {
+  .backdrop {
+    padding-top: 221px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .backdrop {
     overflow-y: scroll;
   }
