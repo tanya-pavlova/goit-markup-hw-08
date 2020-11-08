@@ -19,23 +19,37 @@
                 <span class="logo-accent">Web</span><span class="logo">Studio</span>
             </a>
 
-            <ul class="navigation-list list">
-                <li class="navigation-list-item"><a href="./index.html" class="navigation-list-link link ">Студия</a></li>
-                <li class="navigation-list-item"><a href="./portfolio.html" class="navigation-list-link link current" >Портфолио</a></li>
-                <li class="navigation-list-item"><a href="" class="navigation-list-link link" >Контакты</a></li>
+           
 
-            </ul>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+                <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>    
 
+            <div class="menu-container " id="menu-container" data-menu> 
+                <ul class="navigation-list list">
+                    <li class="navigation-list-item "><a href="./index.html" class="navigation-list-link link ">Студия</a></li>
+                    <li class="navigation-list-item"><a href="./portfolio.html" class="navigation-list-link link current" >Портфолио</a></li>
+                    <li class="navigation-list-item"><a href="" class="navigation-list-link link" >Контакты</a></li>
+
+                </ul>
+
+                <address class="address">            
+                    <a class="header-email-link link" href="mailto:info@devstudio.com"><svg  class="email-icon">
+                        <use href="./images/symbol-defs.svg#icon-letter"></use >
+                    </svg>info@devstudio.com</a>
+                    <a class="header-tel-link link" href="tel:+380961111111"><svg  class="tel-icon">
+                        <use href="./images/symbol-defs.svg#icon-phone"></use></svg>+38 096 111 11 11</a>
+                </address>
+            </div>
+        
         </nav>  
 
-        <address class="address">            
-            <a class="header-email-link link" href="mailto:info@devstudio.com"><svg class="email-icon">
-                <use href="./images/symbol-defs.svg#icon-letter"></use>
-            </svg>info@devstudio.com</a>
-            <a class="header-tel-link link" href="tel:+380961111111"><svg class="tel-icon">
-                <use href="./images/symbol-defs.svg#icon-phone"></svg>+38 096 111 11 11</a>
-        </address>
-    </div>
+        
+
+     </div>
     </header>
 
 <!-- PORTFOLIO-->
@@ -65,7 +79,13 @@
                         <li class="our-projects-list-item list">
                             
                             <a class="our-projects-list-link link" href=""> 
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/web-site-technokryak.jpg" alt="Веб-сайт Технокряк" width="370" height="294"> 
+                                <div class="our-projects-img-overlay">
+                                    <picture>
+                                        <source srcset="./images/portfolio/desktop-technokryak.jpg 1x , ./images/portfolio/desktop-technokryak@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-technokryak.jpg 1x , ./images/portfolio/tablet-technokryak@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-technokryak.jpg 1x , ./images/portfolio/mob-technokryak@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-technokryak.jpg" alt="Веб-сайт Технокряк" > 
+                                    </picture>
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                     </div>
@@ -80,7 +100,15 @@
                         </li>
                         <li class="our-projects-list-item list">
                             <a class="our-projects-list-link link" href="">
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/design-poster.jpg" alt="Дизайн постера" width="370" height="294">
+                                <div class="our-projects-img-overlay">
+                                    
+                                    <picture>
+                                        <source srcset="./images/portfolio/desktop-poster.jpg 1x , ./images/portfolio/desktop-poster@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-poster.jpg 1x , ./images/portfolio/tablet-poster@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-poster.jpg 1x , ./images/portfolio/mob-poster@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-poster.jpg" alt="Дизайн постера" > 
+                                    </picture>
+
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > </p>
                                     </div>
@@ -93,7 +121,15 @@
                         </li>
                         <li class="our-projects-list-item list">
                             <a class="our-projects-list-link link" href="">
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/app-restaurant.jpg" alt="Приложение для ресторана" width="370" height="294">
+                                <div class="our-projects-img-overlay">
+                                    
+                                   <picture>
+                                        <source srcset="./images/portfolio/desktop-app-restaurant.jpg 1x , ./images/portfolio/desktop-app-restaurant@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-app-restaurant.jpg 1x , ./images/portfolio/tablet-app-restaurant@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-app-restaurant.jpg 1x , ./images/portfolio/mob-app-restaurant@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-app-restaurant.jpg" alt="Приложение для ресторана" > 
+                                    </picture>
+
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > </p>
                                     </div>
@@ -106,7 +142,15 @@
                         </li>
                         <li class="our-projects-list-item list">
                             <a class="our-projects-list-link link" href="">
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/project-prime.jpg" alt="Проект прайм" width="370" height="294">
+                                <div class="our-projects-img-overlay">
+                                    
+                                    <picture>
+                                        <source srcset="./images/portfolio/desktop-project-prime.jpg 1x , ./images/portfolio/desktop-project-prime@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-project-prime.jpg 1x , ./images/portfolio/tablet-project-prime@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-project-prime.jpg 1x , ./images/portfolio/mob-project-prime@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-project-prime.jpg" alt="Проект прайм" > 
+                                    </picture>
+
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > </p>
                                     </div>
@@ -119,7 +163,15 @@
                         </li>
                         <li class="our-projects-list-item list">
                             <a class="our-projects-list-link link" href="">
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/project-boxes.jpg" alt="Проект Боксис" width="370" height="294">
+                                <div class="our-projects-img-overlay">
+                                    
+                                    <picture>
+                                        <source srcset="./images/portfolio/desktop-project-boxes.jpg 1x , ./images/portfolio/desktop-project-boxes@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-project-boxes.jpg 1x , ./images/portfolio/tablet-project-boxes@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-project-boxes.jpg 1x , ./images/portfolio/mob-project-boxes@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-project-boxes.jpg" alt="Проект Боксис" > 
+                                    </picture>
+
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > </p>
                                     </div>
@@ -132,7 +184,15 @@
                         </li>
                         <li class="our-projects-list-item list">
                             <a class="our-projects-list-link link" href="">
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/inspirationhasnoborders.jpg" alt="Веб-сайт" width="370" height="294">
+                                <div class="our-projects-img-overlay">
+                                    
+                                    <picture>
+                                        <source srcset="./images/portfolio/desktop-inspiration.jpg 1x , ./images/portfolio/desktop-inspiration@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-inspiration.jpg 1x , ./images/portfolio/tablet-inspiration@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-inspiration.jpg 1x , ./images/portfolio/mob-inspiration@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-inspiration.jpg" alt="Веб-сайт" > 
+                                    </picture>
+
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > </p>
                                     </div>
@@ -145,7 +205,15 @@
                         </li>
                         <li class="our-projects-list-item list">
                             <a class="our-projects-list-link link" href="">
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/design-limited-edition.jpg" alt="Дизайн издания" width="370" height="294">
+                                <div class="our-projects-img-overlay">
+                                    
+                                    <picture>
+                                        <source srcset="./images/portfolio/desktop-limited-edition.jpg 1x , ./images/portfolio/desktop-limited-edition@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-limited-edition.jpg 1x , ./images/portfolio/tablet-limited-edition@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-limited-edition.jpg 1x , ./images/portfolio/mob-limited-editionn@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-limited-edition.jpg" alt="Дизайн издания" > 
+                                    </picture>
+
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > </p>
                                     </div>
@@ -158,7 +226,15 @@
                         </li>
                         <li class="our-projects-list-item list">
                             <a class="our-projects-list-link link" href="">
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/project-lab.jpg" alt="Проект ЛАБ" width="370" height="294">
+                                <div class="our-projects-img-overlay">
+                                    
+                                    <picture>
+                                        <source srcset="./images/portfolio/desktop-project-lab.jpg 1x , ./images/portfolio/desktop-project-lab@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-project-lab.jpg 1x , ./images/portfolio/tablet-project-lab@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-project-lab.jpg 1x , ./images/portfolio/mob-project-lab@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-project-lab.jpg" alt="Проект ЛАБ" > 
+                                    </picture>
+
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > </p>
                                     </div>
@@ -171,7 +247,15 @@
                         </li>
                         <li class="our-projects-list-item list">
                             <a class="our-projects-list-link link" href="">
-                                <div class="our-projects-img-overlay"><img class="our-projects-img" src="./images/portfolio/app-growing-business.jpg" alt="Приложение растущий бизнес" width="370" height="294">
+                                <div class="our-projects-img-overlay">
+                                    
+                                    <picture>
+                                        <source srcset="./images/portfolio/desktop-app-business.jpg 1x , ./images/portfolio/desktop-app-business@2x.jpg 2x" media="(min-width:1200px)">
+                                        <source srcset="./images/portfolio/tablet-app-business.jpg 1x , ./images/portfolio/tablet-app-business@2x.jpg 2x" media="(min-width:768px)">
+                                        <source srcset="./images/portfolio/mob-app-business.jpg 1x , ./images/portfolio/mob-app-business@2x.jpg 2x" media="(min-width:480px)">
+                                        <img class="our-projects-img" src="./images/portfolio/mob-app-business.jpg" alt="Приложение растущий бизнес" > 
+                                    </picture>
+
                                     <div class="our-projects-overlay">
                                         <p class="our-projects-overlay-text" > </p>
                                     </div>
@@ -250,8 +334,8 @@
             <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
             <form action="#" class="footer-form">
                 <input type="email" name="footer-form-email" class="footer-form-email" placeholder="E-mail">
-                <button type="submit" class="footer-submit-btn">Подписаться
-                </button>
+                <div class="footer-bnt-wrapper"><button type="submit" class="footer-submit-btn">Подписаться
+                </button></div>
             </form>
         </div>
     </div>

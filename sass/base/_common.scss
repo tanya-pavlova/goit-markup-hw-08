@@ -8,8 +8,15 @@
 
 body {
     font-family: $main-font;
-    font-style: normal;           
+    font-style: normal;  
+  min-width: 480px;
 }
+
+.body.modal-open {
+  overflow: hidden;
+}
+
+
 
 .list {
     list-style: none;

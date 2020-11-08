@@ -1,132 +1,142 @@
 .header {
-    padding: 24px 0; 
+    padding: 16px 0; 
+    position: relative;
+
+    @media screen and (min-width:768px) {
+        padding: 26px 0;
+    }
     
+    .container {
+        display: flex;   
+        justify-content: space-between;    
+        min-width: 480px;
+    }
+
+
+
+    .logo-accent {
+        font-family: $secondary-font;  
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.167;
+        letter-spacing: 0.03em;
+        color: $accent-color;
+       } 
+    
+
     .logo {
         font-family: $secondary-font;  
         font-weight: 700;
-        font-size: 26px;
-        line-height: 1.192;
+        font-size: 24px;
+        line-height: 1.167;
         letter-spacing: 0.03em;
         color: #000000;
     }
 
-    .container {
-        display: flex;
+    @media screen and (min-width: 1200px) {
+        .logo-accent {
+            font-size: 26px;
+            line-height: 1.192;       
+        } 
+        
+    
+}
+
+
+    
+.address {
+    
+
+
+    @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  } 
+
+
+    @media screen and (min-width: 767px) and (max-width:1199px) {
+     
+        flex-direction: column;  
+    }
+
+    @media screen and (min-width:768px){
+        display: inline-flex;
         align-items: center;
     }
 
-    .address {
-        display: flex;
+    @media screen and (min-width:1200px){
+        display: inline-flex;
         align-items: center;
-        margin-left: auto;  
+}
+
+}
+
+
+
+
+
+.header-tel-link {
+    display: inline-flex;
+    align-items: center;   
+    font-family: $main-font;    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    color: $secondary-color;  
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width:767px){
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    @media screen and (min-width:768px){
+        margin-top: 10px;
         }
 
-  }
-
-.logo-accent {
-    font-family: $secondary-font;  
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: $accent-color;
-   } 
-
-.navigation {
-    display: flex;
-    align-items: center;
-  }
-
-
-.navigation-list {    
-    display: flex;
-    align-items: center;
-
-    &-link {                   
-        font-weight: 500;
+    @media screen and (min-width:1200px){
+        margin-top: 0px;
         font-size: 14px;
         line-height: 1.143;
-        letter-spacing: 0.02em;
-        color: $title-main-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;  
-
-
-        &:hover,
-        &:focus {
-            color: $accent-color;
         }
-    }
-
-    &-item:not(:last-child) {
-        margin-right: 50px;
-    }
-
-   
-  }
 
 
-.email-icon{
-    display: inline-block;    
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;    
-    fill: $secondary-color;
-
-
-    .header-email-link:hover &,
-    .header-email-link:focus & {
-        fill: $accent-color; 
+    &:hover,
+    &:focus {
+        color: $accent-color; 
     }
 }
-
-.tel-icon {
-    display: inline-block;       
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: $secondary-color;
-
-    .header-tel-link:hover &,
-    .header-tel-link:focus & {
-        fill: $accent-color; 
-    }
-}
-
 
 .header-email-link {
     display: inline-flex;
     align-items: center;
-    margin-right: 50px;
     font-family: $main-font;    
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
+    font-size: 12px;
+    line-height: 1.167;
     letter-spacing: 0.02em;
     color: $secondary-color;  
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        color: $accent-color; 
-    }
-}
-
-.header-tel-link {
-    display: inline-flex;
-    align-items: center;
    
-    font-family: $main-font;    
-    font-weight: 500;
+
+    @media screen and (max-width:767px){
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+
+    }
+
+    @media screen and (min-width:1200px){
+       
+    margin-bottom: 0;
+    margin-right: 50px; 
     font-size: 14px;
     line-height: 1.143;
-    letter-spacing: 0.02em;
-    color: $secondary-color;  
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    }
 
     &:hover,
     &:focus {
@@ -135,24 +145,208 @@
 }
 
 
-.logo-link {
-      margin-right: 93px;
-  }
 
-.current {
-    color: $accent-color;
+@media screen and (min-width:1200px){
+    .tel-icon {
+        width: 10px;
+        height: 16px;
+    }
+}
+
     
 
+.navigation {   
+width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .navigation-list {    
+      @media screen and (max-width:767px) {            
+        display: flex;
+        flex-direction: column;
+     }
+        
+        @media screen and (min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        &-link {                   
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.143;
+            letter-spacing: 0.02em;
+            color: $title-main-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;  
+    
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+    
+        &-item {
+            @media screen and (max-width:767px){
+            display: flex;     
+            justify-content: center;
+            
+            &:not(:first-child) {
+                 margin-top: 40px;
+             }
+            }
+    }
+    
+        
+}
+
+@media screen and (min-width:768px) {  
+    .navigation-list-item:not(:last-child)  {
+        margin-right: 50px;
+
+    }        
+    
+ }
+    
+.current {
+    color: $accent-color;
+
     &::after  {
-        display: block;    
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 4px;   
-        border-radius: 2px;
-        align-items: flex-end;
-        bottom: -30px;  
-        background-color: $accent-color;
+            display: block;    
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;   
+            border-radius: 2px;
+            align-items: flex-end;
+             
+            background-color: $accent-color;
+
+ 
+            @media screen and(max-width:767px){
+                bottom: -8px; 
+            }
+
+            @media screen and(min-width:768px){
+                bottom: -37px; 
+            }
+
+            @media screen and(min-width:1200px){
+                bottom: -32px; 
+            }
+        }
+        
+    }
+
+   
+
+}
+
+.logo-link {
+    margin-right: 88px;
+
+    @media screen and (min-width:1200){
+        margin-right: 93px;
     }
 }
 
+
+
+
+
+
+
+
+.menu-button {
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    
+    .icon-close {
+        display: none;
+    }
+ 
+   
+    &.is-open {
+        .icon-close{
+            display: block;
+        }
+
+        .icon-menu {
+            display: none;
+         }
+
+
+         
+    }
+   
+   
+
+    @media screen and (min-width:768px){
+        display: none;
+    }
+}
+
+.menu-container {
+  
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height:0;
+    background-color:#ffffff;
+    
+    
+    &.is-open {
+    display: block;
+    }
+    
+    @media screen and (max-width:767px){
+        display: none;
+        position: absolute;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:768px){
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        position: inherit;
+    }
+
+}
+}
+
+.email-icon {
+    display: inline-block;    
+    width: 14px;
+    height: 10px;
+    margin-right: 10px;    
+    fill: $secondary-color;  
+    
+    @media screen and (min-width:1200px){
+        width: 16px;
+        height: 12px;
+    }
+
+    .header-email-link:hover &,
+    .header-email-link:focus & {
+    fill: $accent-color; 
+    }
+}
+
+.tel-icon {
+    display: inline-flex;       
+    width: 10px;
+    height: 14px;
+    margin-right: 10px;
+    fill: $secondary-color;
+
+.header-tel-link:hover &,
+.header-tel-link:focus & {
+    fill: $accent-color; 
+}
+}

@@ -1,9 +1,21 @@
 .social-list {
     display: flex;
+    padding-left: 122px;    
+    padding-right: 122px;
     justify-content: space-between;
-    padding-left: 32px;    
-    padding-right: 32px;
 
+    @media screen and(min-width:768px){
+        padding-left: 74px;    
+        padding-right: 74px;
+      
+    }
+
+    @media screen and(min-width:1200px){
+      padding-left: 31px;    
+      padding-right: 31px;
+    
+  }
+    
     &-link {
     display: flex;
     align-items: center;
@@ -50,9 +62,5 @@
 
   }
 }
-
-
-
-
 
 

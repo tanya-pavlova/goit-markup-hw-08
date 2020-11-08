@@ -1,11 +1,6 @@
-
-.container-join { 
-    margin-left: 70px;
-}
-
 .join-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 
  &-item:not(:last-child) {
@@ -46,7 +41,6 @@ margin-right: 10px;
 
 .join-title {
     font-family: Roboto;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1641;
@@ -55,6 +49,10 @@ margin-right: 10px;
     color: #FFFFFF;
     margin-bottom: 20px;
     display: flex;
-    justify-content: start;
-    padding-top: 12px;
+    justify-content: center;
+    
+
+    @media screen and(min-width:768px){
+        padding-top: 12px;
+    }
 }
