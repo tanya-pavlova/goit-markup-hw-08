@@ -185,7 +185,6 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
-  min-width: 480px;
 }
 
 .header .logo-accent {
