@@ -9,7 +9,9 @@
     transition: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   min-width: 480px;
+    min-width: 480px;
+
+  
     
     
     &.is-hidden {

@@ -41,6 +41,8 @@
         color: #FFFFFF;
         display: flex;
         justify-content: center;
+
+        
     }
 
 
@@ -48,6 +50,7 @@
         @media screen and(max-width:767px) {
             margin-bottom: 60px;  
         }
+        
         
     }
 
@@ -61,6 +64,7 @@
         color: rgba(255, 255, 255, 0.6);
         display: flex;
         justify-content: center;
+        
     }
 
  .container {
@@ -88,10 +92,26 @@
    .address-container {
        margin-right: 165px;
    }
+
+   
 }
 
 @media screen and(min-width:1200px){
     .address-container {
         margin-right: 70px;
+    }
+ }
+
+ @media screen and(min-width:1200px) {
+     .footer-email-link {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+     }
+
+     .footer-tel-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
  }
