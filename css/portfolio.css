@@ -8,7 +8,6 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  min-width: 480px;
 }
 
 .body.modal-open {
@@ -320,7 +319,6 @@ body {
 }
 
 .header .navigation {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

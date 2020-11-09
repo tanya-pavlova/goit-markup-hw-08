@@ -20,7 +20,6 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  min-width: 480px;
 }
 
 .body.modal-open {
@@ -207,7 +206,6 @@ body {
   transition: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 480px;
 }
 
 .backdrop.is-hidden {
@@ -231,6 +229,7 @@ body {
 @media screen and (max-width: 1199px) {
   .backdrop {
     padding-top: 221px;
+    overflow-y: scroll;
   }
 }
 
@@ -241,14 +240,19 @@ body {
 }
 
 .modal {
+  background-color: #FFFFFF;
+  position: absolute;
+  padding: 40px;
   width: 450px;
   height: 609px;
   background-color: #FFFFFF;
-  position: relative;
-  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modal {
     width: 528px;
     height: 581px;
@@ -589,7 +593,6 @@ body {
 }
 
 .header .navigation {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

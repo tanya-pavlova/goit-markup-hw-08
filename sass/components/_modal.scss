@@ -9,12 +9,9 @@
     transition: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    min-width: 480px;
+    
 
-  
-    
-    
-    &.is-hidden {
+  &.is-hidden {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -24,6 +21,8 @@
 @media screen and(max-width:767px) {
     .backdrop {
         padding: 93px 15px;
+  
+
     }
 }
 
@@ -33,12 +32,14 @@
 @media screen and(min-width:768px) and (max-width:1199px) {
     .backdrop {
         padding: 207px 159px;
+        
 }
 }
 
 @media screen and(max-width:1199px) {
     .backdrop {
         padding-top: 221px;
+        overflow-y: scroll;
     }
 }
 @media screen and(min-width:1200px) {
@@ -49,16 +50,22 @@
 
 
 .modal {
+    
+    background-color: #FFFFFF;
+    position: absolute;
+    padding: 40px;
     width: 450px;
     height: 609px;
     background-color: #FFFFFF;
-    position: relative;
-    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
      
       
         
-        @media screen and(min-width:1200px){
+        @media screen and(min-width:768px) {
             
             width: 528px;
             height: 581px;
