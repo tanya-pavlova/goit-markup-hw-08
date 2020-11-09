@@ -588,6 +588,11 @@ body {
   }
 }
 
+.our-projects-img {
+  background-size: cover;
+  width: 100%;
+}
+
 .our-projects-list-link {
   display: block;
   height: 100%;
