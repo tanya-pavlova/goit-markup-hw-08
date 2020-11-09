@@ -245,27 +245,35 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  transform: translate(-50%, -50%) scale(0.85);
+  min-width: 450px;
 }
 
 @media screen and (min-width: 480x) {
   .modal {
-    width: 450px;
-    height: 609px;
+    min-width: 450px;
+    min-height: 609px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     background-color: #FFFFFF;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+    transform: translate(-50%, -50%) scale(0.8);
   }
 }
 
