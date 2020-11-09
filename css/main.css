@@ -67,7 +67,11 @@ body {
   display: flex;
   padding-left: 122px;
   padding-right: 122px;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1172,8 +1176,10 @@ body {
   flex-wrap: wrap;
 }
 
-.clients-list-item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .clients-list-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+  }
 }
 
 .clients-list-link {
