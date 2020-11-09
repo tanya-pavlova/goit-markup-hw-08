@@ -613,7 +613,7 @@ body {
   .our-projects-list-item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
-  .our-projects-list-item:not(:nth-last-child(-n+2)) {
+  .our-projects-list-item:not(last-child) {
     margin-bottom: 30px;
   }
 }
